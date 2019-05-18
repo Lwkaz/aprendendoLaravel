@@ -1,0 +1,15 @@
+Anotações
+
+criar modelo: php artisan make:model Nome -m
+
+editar create_nome_table para colocar mais atributos; não se esqueça que as chaves são unsignedBigInteger
+
+criar controller? php artisan make:controller NomeController --resource
+
+no web.php colocar as rotas apontando o caminho para a funcao index do controller
+
+-Route::get('/produtos', 'ControladorProduto@index');
+
+php artisan migrate:fresh - recriar acoes na base, como recriar tabelas
+
+deixar active em cada item: colocar um current nas views; 
